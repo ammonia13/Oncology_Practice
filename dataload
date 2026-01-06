@@ -1,1 +1,13 @@
 
+import pandas as pd
+
+# Metadata
+model = pd.read_csv("data_raw/depmap/Model.csv")
+
+# Expression (ML-ready)
+expr = pd.read_csv(
+    "data_raw/depmap/OmicsExpressionProteinCodingGenesTPMLogp1.csv"
+)
+
+# Drug response (CSV you saved)
+drug = pd.read_csv("data_raw/gdsc/drug_response.csv")
